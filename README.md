@@ -1,91 +1,70 @@
 # READ ME
 
-## Building Web Pages
+## GitHub Setup
+**DUE:** Friday, Feb. 15, 2019, Noon.
 
+This projects is worth **10 points**.
 
-### Objectives
+This walkthrough will guide you in setting up your web space on GitHub. Once this space is created, all your work will be posted here throughout the semester.
 
-- Become familiar with creating HTML page structure
-- Process raw information and decide how to format it with HTML
-- Develop a workflow for building and linking multiple pages
+It is very important you *slow down* and understand what you are doing in this exercise. Make sure you read the instructions in this file, text on GitHub and user interface of GitHub Desktop as you work through each step.
+
+I estimate 99.9 percent of the mistakes on this assignment involve students not reading the instructions, GitHub or GitHub Desktop. (The 0.1 percent is due to GitHub having issues. It has happened maybe once in the last five years of this course.) Doing so usually leads to an instruction skipped over and mistakes moving forward. If something does not seem correct, retrace your steps.
+
+This exercise may be completed in about an hour (and that is a very conservative estimate).
 
 
 ### Instructions
 
-Clone this repository by clicking "Clone or Download". Select "Download ZIP".
+1. Install [GitHub Desktop](http://desktop.github.com) on the computer you are using. On setup, you should be prompted to log in to your GitHub account. If you are not logged in on GitHub Desktop, log in now.
 
-Included in the `exercise-01` (or `exercise-01-master`) directory are the following files:
+2. Log in to your account on the [GitHub](http://github.com) web site.
 
-- README.md (this file)
-- apple-ii.jpg
-- apple-ii.txt
-- commodore-64.jpg
-- commodore-64.txt
-- main-content.txt
-- trs-80.jpg
-- trs-80.txt
+3. Visit your repositories page by clicking the icon in the top, right corner of the GitHub web site, then select **Your repositories**.
 
-Do not move any files outside of this directory.
+4. Click the green **New** button to create a new repository on the GitHub web site. Name it `username.github.io` (where username is your GitHub username). Type your username exactly as it appears; GitHub is case sensitive.
 
-Add new files to the `exercise-01` directory.
+5. For the description, enter `https://username.github.io` (again, where username is your GitHub username). Select the radio button next to **Public**. You can ignore all other settings. Click **Create repository**.
 
-**Never copy and paste code; always type it in by hand.**
+6. In the **Quick Setup** section, click the **Set up in Desktop** button. An alert may appear in Firefox asking you to launch an application. Make sure GitHub Desktop is selected. Click **Open Link**. (If no alert pops up, proceed to Step 7.)
 
+7. When the GitHub Desktop application opens, a **Clone a Repository** window appears. Note the local path. This is where a directory will be saved on the computer. Click **Clone**.
 
-### Tasks
+8. In your code editor, create a new file. Save it as `index.html` in the `username.github.io` folder you just saved to the computer. (Why `index.html`? If there are multiple files on a web site, the server looks for index.html first. Otherwise, it will not know what page to load and return an error.)
 
-1. Create a file, `index.html`. Add the document structure for your web page. This should include `<html>`, `<head>` and `<body>` tags. Make sure your code is properly nested.
+9. Create a simple web page. Build the document structure: a doctype, html, head and body tags. Add your character set and title tags.
 
-2. Add the content from `main-content.txt` to `index.html`. You may copy and paste the text into the document (never copy and paste code). Text within square brackets (`[` and`]`) are notes about the content and should not appear on the page.
+10. Add your name wrapped in an `h1` tag and include some content. Write a short paragraph ("This is my first web page!"), perhaps a list. Add some fun stuff if you would like. Use the opportunity to practice coding. It need not be complex.
 
-  Format the content using appropriate semantic tags. This includes: headings, paragraphs, images and lists.
+11. Save the `octocat.png` file from this repository to the `username.github.io` folder on your computer. Add `octocat.png` to `index.html` using an `img` tag. (Do not forget the `alt` attribute!)
 
-  Photo caption text should be emphasized.
+12. When finished, return to GitHub Desktop. In the left column, you will see checks next to two files -- `index.html` and `octocat.png`. (You may uncheck `.DS_Store` if it exists.) Note these are highlighted in green. This means new files have been added to `username.github.io`; orange means those files have changed. The panel on the right shows you the additions/deletions in the file.
 
-  Strongly emphasize the computer name (and any 'nicknames') on first reference in the paragraphs.
+13. Below the list of files, add a short summary for the changes. Adding a longer description is optional. Click **Commit to master**. In the top bar, click **Publish Branch**. This will upload your files to GitHub.
 
-  Are there any abbreviations? Mark these up (first reference only), too. If you are unfamiliar with an abbreviation, look it up!
+14. Return to the browser. Return to the page of the `username.github.io` (again, where username is your GitHub username) repository you created. The files you committed should now appear.
 
-3. In `index.html`, link each item under "Microcomputers". Apple II should be linked to `apple-ii.html`; "Commodore 64" to `commodore-64.html`; and "TRS 80" to `trs-80.html`.
+15. To view your web page, visit "http://username.github.io" (again, where username is your GitHub username). Your web page should be live!
 
-4. Create a file for each computer -- `apple-ii.html`, `commodore-64.html`, `trs-80.html`.
+16. [Create an issue in the github-setup  repository](https://github.com/umiami-web-design/github-setup/issues) with your full name and a link to your web page (http://username.github.io/) by the deadline. If you are unsure of what is required in the issue, [check the example](https://github.com/umiami-web-design/github-setup/issues/1) provided.
 
-  Add the content for each computer into its respective HTML file. Format this content as you did with the text in `index.html`.
+  **TIP:** This is the part where most students who fail this assignment mess up. Make sure you:
 
-  For each item in the "Specifications" list, strongly emphasize each label (i.e. Release Date, Price, etc.).
+  1. Submit an issue. This is how I know you have completed the assignment.
 
-  *Tip:* For this task, you may want to work through all content for each computer at a time, as opposed to putting one element (i.e. page title, paragraphs, lists) at a time in each file.
+  2. Are submitting the issue to *[this](https://github.com/umiami-web-design/github-setup/issues)* repository, *not* your username.github.io repository or any other repository.
+
+  Simply put, if you do not see my name as as Issue No. 1, you are not in the correct place. Re-read the instructions above and re-submit your issue.
+
+Do not wait until the last minute to submit your URL.
 
 
-### How to tackle this project
+### Grading
 
-**Read the task.**
+This is an all-or-nothing assignment. You either get it right or you don't. You either submit it on time or you don't. *There is no partial credit.*
 
-Decide what you need to do, one step at a time.
+Your code is not graded in this assignment, although it will be reviewed. You will receive feedback if there are glaring errors.
 
-Write down the task to be completed. When you finish, check it off.
+**Plagiarism or lapses in web ethics, as detailed in the course syllabus, will result in a zero (0) on the assignment, PLUS a 15-point penalty on your final grade and referral to the University of Miami Honor Council.**
 
-Decide on the next task to tackle.
-
-It is okay if you get stuck. Set aside the task giving you trouble, decide on another and move on. Be sure you have written down the task giving you trouble (so you can spend time on it later).
-
-
-### Am I done?
-
-It is not expected for you to complete this exercise in class. If you finish, have your professor give it a look. If you *are* finished, delete your work and code it again. Practice, repetition is an excellent way to learn.
-
-
-### Why isn't X working?
-
-Before asking for help, try working through the problem first. Refer to your notes, book or any resources made available to you for this course.
-
-When something does not appear to work as you expect, ask yourself:
-
-  - Did I forget to close a tag?
-  - Are there typos in element, attribute, value names?
-  - Did I forget to include quotes around attributes?
-  - Are my file names, directory paths correct?
-
-Remember, you can always refer to your notes, book or any resources made available to you for this course.
-
-**Good luck!**
+Good luck!
