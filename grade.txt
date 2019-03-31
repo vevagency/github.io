@@ -1,0 +1,73 @@
+WEB DESIGN: HTML
+STUDENT: Victoria Valdes
+GITHUB URL: http://vevagency.github.io/html-project/resume.html
+
+GRADE: 8/10
+
+- SUBMISSION ERROR (-2)
+
+Be sure you review the these and make corrections to your HTML document. You will use `resume.html` again for the CSS exercises. If the mistakes noted here appear in the CSS exercise, there will be a deduction!
+
+CORRECTIONS:
+
+- Heading tags (h1-h6) improperly used
+- Incorrect tags used for semantic markup
+- Code not properly indented, nested
+
+
+NOTES:
+
+This is very solid, but there's a bit of lack of attention for detail.
+
+The project was not submitted correctly. Do not submit your work in a subdirectory. All work should be submitted to the root. The instructions were clear on this -- your URL should be http://vevagency.github.io/resume.html. (Don't get ahead of yourself with creating directories because all the work you do is at the root level.)
+
+I really should have deducted one point because there was no attempt at linking within the page. (This has kind of been the standard deduction for something missing -- broken is okay; not attempting is not.) The navigation is supposed to link to the individual sections of the resume, not link to itself.
+
+As for some fixes...
+
+- In the meta tag, DO NOT separate your attribute, equal sign and value with spaces. It should be: <meta charset="UTF-8" />
+
+- In the header, you never want to put something before the h1. The h1 is the most important tag on the page. Your graphic cannot be 'read' by a search engine. I would just suggest flipping the first img and h1. Also, in the h1, this should be your name.
+
+- Again, with the nav, this should be a list of sections of your site, with links pointing to the id of those sections.
+
+- Use of headings isn't quite correct when you double up. You can't repeat the same tag twice in this case as it's not really a subsection. For instance:
+
+<h3>Master of Fine Arts in Communication</h3>
+<h4>University of Miami</h4>
+<p>Coral Gables, FL</p>
+<h4>Interactive Media</h4>
+<p>Aug. 2017 - Present</p>
+
+Might be better coded as:
+
+<h3>Master of Fine Arts in Communication</h3>
+<h4>University of Miami</h4>
+<p>Coral Gables, FL</p>
+<p><strong>Interactive Media</strong></p>
+<p>Aug. 2017 - Present</p>
+
+h3 is declaring the heading for this article; h4 acts as a subhead. But to code "Interactive Media" as an h4 ... University of Miami and Interactive Media are not really headings of subsections of your MFA. You might be able to use an h5 for interactive media because it could be a subsection. But really it might make more sense to use the heading, subheading route, with the rest of the content being paragraphs, then emphasize or strongly emphasize the content of those.
+
+Another possible example under education:
+
+<h3>Bachelor of Science in Communication</h3>
+<h4>University of Miami</h4>
+<p>Coral Gables, FL</p>
+<p><strong>Major:</strong> Public Relations</p>
+<p><em>Minors:</em> Marketing and Psychology</p>
+<p>May 2015</p>
+
+(Again, there might be a few ways to do this, but... this is just one example.)
+
+- With the links at the end, I'm not really sure this is "footer" material. (Also, the footer should be outside of main.) These could just be a section inside main.
+
+- As for your question about linking images, the solution is easy!
+
+<p>
+  <a href="https://www.linkedin.com/in/victoria-valdes-68926035/">
+    <img src="linkedin-logo-sq.jpg" alt="LinkedIn Profile Link"/>
+  </a>
+</p>
+
+(Normally, it's a good idea to *not* do the indenting as I have -- just have the tags go right after one another, but I wanted to show you how it breaks down.)
