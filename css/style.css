@@ -1,23 +1,31 @@
 body {
   color: #222;
-  font-size: 14px;
-  font-family: sans-serif;
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  /* font-family: 'Gurajada', serif; */
   /* you may have added additional fonts at the front of the stack */
   line-height: 1.5;
 }
 
 header {
+  font-size: 24px;
   background-color: #eee;
+  font-family: 'Chau Philomene One', sans-serif;
 }
 
-header a {
-  background-color: #eee;
-  color: #444;
+nav {
+color: purple;
+  font-size: 16px;
+  font-style: italic;
 }
 
-/* header em {
-  font-weight: bold;
-} */
+a {
+  color: purple;
+}
+
+a:visited {
+  color: #3bd6c6;
+}
 
 /* header a:visited {
   background-color: #444;
@@ -57,18 +65,40 @@ footer small {
   font-size: 10px;
 }
 
+#contact h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+#education h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+#experience h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+#skills h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+#accomplishments h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+#links h2 {
+  color: purple;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+/*
 #hardware h2 {
   color: rgb(218,58,51);
 }
 
 #hardware img {
   border-color: rgb(218,58,51);
-}
-
-#software h2 {
-  color: rgb(21,88,218);
-}
-
-#software img {
-  border-color: rgb(21,88,218);
-}
+} */
