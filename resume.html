@@ -4,41 +4,15 @@
     <meta charset="UTF-8" />
     <title>VEV Agency</title>
     <link href="css/style.css" rel="stylesheet" />
-    <style>
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 200px);
-      grid-gap: 20px;
-    }
-
-    #container {
-      grid-column: 1 / span 4;
-      grid-column: 3 / 5;
-      grid-row: 3;
-    }
-    }
-
-#contact
-#education
-#experience
-#skills
-#accomplishments
-#links
-
-
-    </style>
-
   </head>
 
   <body>
-    <div id="container">
+    <div id="wrapper">
       <header id="top">
         <h1>Victoria Ellen Valdes</h1>
 
         <aside>
           <img src="image/resume-masthead.jpg" alt="VEV Agency Masthead"/>
-          <!-- <img src="image/resume-headshot.jpg" alt="Victoria Valdes Headshot"/> -->
         </aside>
 
         <nav>
@@ -54,134 +28,144 @@
       </header>
 
       <main>
-        <section id="contact">
-          <h2>Contact</h2>
+        <div class="grid">
+          <div class="sidebar1">
+            <section id="contact">
+              <h2>Contact</h2>
 
-          <article>
-            <h3>VEV Agency</h3>
-            <p>786-344-4753</p>
-            <p>vevagency@gmail.com</p>
-          </article>
+              <aside>
+                <img src="image/resume-headshot.jpg" alt="Victoria Valdes Headshot"/>
+              </aside>
 
-        </section>
+              <article>
+                <h3>VEV Agency</h3>
+                <p>786-344-4753</p>
+                <p>vevagency@gmail.com</p>
+              </article>
 
-        <section id="education">
-          <h2>Education</h2>
+            </section>
+          </div>
 
-            <article>
-              <h3>Master of Fine Arts in Communication, M.F.A.</h3>
-              <h4>University of Miami</h4>
-              <p>Coral Gables, FL</p>
-              <p><strong>Interactive Media</strong></p>
-              <p>Aug. 2017 - Present</p>
-            </article>
+          <div class="sidebar2">
+            <section id="skills">
+              <h2>Skills</h2>
+                <ul>
+                  <li>Bilingual (Spanish)</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe InDesign</li>
+                  <li>Wordpress</li>
+                  <li>Microsoft Office</li>
+                </ul>
+            </section>
 
-            <article>
-              <h3>Bachelor of Science in Communication, B.S.</h3>
-              <h4>University of Miami</h4>
-              <p>Coral Gables, FL</p>
-              <p><strong>Major:</strong> Public Relations</p>
-              <p><em>Minors:</em> Marketing and Psychology</p>
-              <p>May 2015</p>
-            </article>
+            <section id="links">
+              <h2>Links</h2>
+                <p><a href="https://www.linkedin.com/in/victoria-valdes-68926035/"><img src="image/linkedin-logo-sq.jpg" alt="LinkedIn Profile Link"/></a></p>
+                <p><a href="https://www.pinecrestbakery.com/"><img src="image/pb-logo-sq.jpg" alt="Pinecrest Bakery Website Link"/></a></p>
+            </section>
+          </div>
 
-        </section>
+          <div class="content">
+            <section id="education">
+              <h2>Education</h2>
 
-        <section id="experience">
-          <h2>Experience</h2>
+                <article>
+                  <h3>Master of Fine Arts in Communication, M.F.A.</h3>
+                  <h4>University of Miami</h4>
+                  <p>Coral Gables, FL</p>
+                  <p><strong>Interactive Media</strong></p>
+                  <p>Aug. 2017 - Present</p>
+                </article>
 
-            <article>
-              <h3>Pinecrest Bakery, LLC</h3>
-              <h4>Chief Communications Officer (CCO)</h4>
-              <p>Cuban-American Family-Owned Restaurant Chain</p>
-              <p>South Florida, U.S.A.</p>
-              <p>Dec. 2012 - Present</p>
-              <h5>Marketing</h5>
-              <p>Corporate branding, digital and print graphic design, campaign director, loyalty program manager, integrated marketing solutions, social media manager</p>
-              <h5>Website Coordinator</h5>
-              <p>Website maintenance, content creation, user experience, corporate email manager, online review management</p>
-              <h5>Public Relations</h5>
-              <p>Donations, community partnerships, corporate events, grand openings, blog management, crisis control, customer satisfaction</p>
-            </article>
+                <article>
+                  <h3>Bachelor of Science in Communication, B.S.</h3>
+                  <h4>University of Miami</h4>
+                  <p>Coral Gables, FL</p>
+                  <p><strong>Major:</strong> Public Relations</p>
+                  <p><em>Minors:</em> Marketing and Psychology</p>
+                  <p>May 2015</p>
+                </article>
 
-            <article>
-              <h3>The House of Movement</h3>
-              <h4>Marketing and Branding Consultant</h4>
-              <p>Pilates and Wellness Studio</p>
-              <p>Brickell, FL</p>
-              <p>Sep. 2015 - Oct. 2016</p>
-              <h5>Graphic Design</h5>
-              <p>Print and digital marketing, i.e. brand brochure, front desk video menu, flyers, outdoor signage</p>
-              <h5>Public Relations</h5>
-              <p>Published advertorial in local "Trini Magazine", developed backgrounder with mission and theme of "7 Dimensions of Wellness"
-            </article>
+            </section>
 
-            <article>
-              <h3>The Conroy Martinez Group</h3>
-              <h4>Public Relations Internship</h4>
-              <p>Bilingual Public Relations and Integrated Marketing</p>
-              <p>Coral Gables, FL</p>
-              <p>Oct. 2013 - June 2014</p>
-              <h5>Press Releases</h5>
-              <p>News releases for clients including Lennar Corporation, Miami Seaquarium, and JLG Industries</p>
-              <h5>Media Scheduling</h5>
-              <p>Publishing events online and media clippings from local news sources for Dolphin Mall</p>
-              <h5>Author of Corporate Internship Manual </h5>
-              <p>"PR Essentials: How-To Guide for Public Relations Interns" property of The Conroy Martinez Group</p>
-            </article>
+            <section id="experience">
+              <h2>Experience</h2>
 
-        </section>
+                <article>
+                  <h3>Pinecrest Bakery, LLC</h3>
+                  <h4>Chief Communications Officer (CCO)</h4>
+                  <p>Cuban-American Family-Owned Restaurant Chain</p>
+                  <p>South Florida, U.S.A.</p>
+                  <p>Dec. 2012 - Present</p>
+                  <h5>Marketing</h5>
+                  <p>Corporate branding, digital and print graphic design, campaign director, loyalty program manager, integrated marketing solutions, social media manager</p>
+                  <h5>Website Coordinator</h5>
+                  <p>Website maintenance, content creation, user experience, corporate email manager, online review management</p>
+                  <h5>Public Relations</h5>
+                  <p>Donations, community partnerships, corporate events, grand openings, blog management, crisis control, customer satisfaction</p>
+                </article>
 
-        <section id="skills">
-          <h2>Skills</h2>
+                <article>
+                  <h3>The House of Movement</h3>
+                  <h4>Marketing and Branding Consultant</h4>
+                  <p>Pilates and Wellness Studio</p>
+                  <p>Brickell, FL</p>
+                  <p>Sep. 2015 - Oct. 2016</p>
+                  <h5>Graphic Design</h5>
+                  <p>Print and digital marketing, i.e. brand brochure, front desk video menu, flyers, outdoor signage</p>
+                  <h5>Public Relations</h5>
+                  <p>Published advertorial in local "Trini Magazine", developed backgrounder with mission and theme of "7 Dimensions of Wellness"
+                </article>
 
-            <ul>
-              <li>Bilingual (Spanish)</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe InDesign</li>
-              <li>Wordpress</li>
-              <li>Microsoft Office</li>
-            </ul>
+                <article>
+                  <h3>The Conroy Martinez Group</h3>
+                  <h4>Public Relations Internship</h4>
+                  <p>Bilingual Public Relations and Integrated Marketing</p>
+                  <p>Coral Gables, FL</p>
+                  <p>Oct. 2013 - June 2014</p>
+                  <h5>Press Releases</h5>
+                  <p>News releases for clients including Lennar Corporation, Miami Seaquarium, and JLG Industries</p>
+                  <h5>Media Scheduling</h5>
+                  <p>Publishing events online and media clippings from local news sources for Dolphin Mall</p>
+                  <h5>Author of Corporate Internship Manual </h5>
+                  <p>"PR Essentials: How-To Guide for Public Relations Interns" property of The Conroy Martinez Group</p>
+                </article>
 
-        </section>
+            </section>
 
-        <section id="accomplishments">
-          <h2>Accomplishments</h2>
+            <section id="accomplishments">
+              <h2>Accomplishments</h2>
+                <ul>
+                  <li>Public Relations Student Society of America (PRSSA)</li>
+                  <li>PhilADthropy (Non-profit event, 3 years participation)</li>
+                </ul>
 
-            <ul>
-              <li>Public Relations Student Society of America (PRSSA)</li>
-              <li>PhilADthropy (Non-profit event, 3 years participation)</li>
-            </ul>
+            </section>
+          </div>
 
-        </section>
-
-        <section id="links">
-          <h2>Links</h2>
-
-            <p><a href="https://www.linkedin.com/in/victoria-valdes-68926035/"><img src="image/linkedin-logo-sq.jpg" alt="LinkedIn Profile Link"/></a></p>
-            <p><a href="https://www.pinecrestbakery.com/"><img src="image/pb-logo-sq.jpg" alt="Pinecrest Bakery Website Link"/></a></p>
-
-        </section>
-
+        </div>
       </main>
 
-      <footer>
-        <p>Menu:</p>
+      <div class="footer">
+        <footer>
+          <p>Menu:</p>
 
-        <nav>
-          <ul>
-            <li><a href="#top">Return to top</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#accomplishments">Accomplishments</a></li>
-            <li><a href="#links">Links</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href="#top">Return to top</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#accomplishments">Accomplishments</a></li>
+              <li><a href="#links">Links</a></li>
+            </ul>
+          </nav>
 
-        <p><small>&copy; 2019. All Rights Reserved.</small></p>
-      </footer>
+          <p><small>&copy; 2019. All Rights Reserved.</small></p>
+        </footer>
+      </div>
+
     </div>
   </body>
 </html>
