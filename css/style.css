@@ -1,104 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Source+Sans+Pro');
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #eee;
+  min-width: 320px;
+}
+
 body {
-  color: #222;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  /* font-family: 'Gurajada', serif; */
-  /* you may have added additional fonts at the front of the stack */
-  line-height: 1.5;
+  color: #222;
+  margin: 0 auto;
 }
 
 header {
-  font-size: 24px;
-  background-color: #eee;
-  font-family: 'Chau Philomene One', sans-serif;
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-variant-caps: all-small-caps;
 }
 
+header img {
+  width: 960px;
+}
+
+h1 {
+  font-size: 96px;
+  text-align: center;
+  /* purple */
+  color: rgb(110,34,99);
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* width: */
+}
+
+h2 {
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-variant-caps: all-small-caps;
+  font-size: 48px;
+  /* purple */
+  color: rgb(110,34,99);
+  margin: 0;
+}
+
+h3, h4 {
+  /* padding-top: 20px; */
+  line-height: 1.5;
+  margin: 0;
+}
+
+p {
+  /* padding-top: 20px; */
+  line-height: 1;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-variant-caps: all-small-caps;
+  font-size: 24px;
+  /* padding-top: 20px; */
+  /* line-height: .05; */
+  margin: 0;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+#links {
+  display: inline-block;
+}
+
+/* navigation */
 nav {
-color: purple;
-  font-size: 16px;
+  font-size: 24px;
   font-style: italic;
+  font-variant: all-small-caps;
+  /* purple */
+  background-color: rgb(110,34,99);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
 }
 
 a {
-  color: purple;
-}
-
-a:visited {
-  color: #3bd6c6;
-}
-
-/* header a:visited {
-  background-color: #444;
-  color: #eee;
-} */
-
-aside img {
-  border-width: 3px;
-  border-style: solid;
-  border-color: #222;
-  /* Or the shorthand version:
-
-    border: 3px solid #222;
-  */
-}
-
-aside em {
-  color: #999;
-  font-size: 10px;
-  font-style: italic;
-}
-
-footer {
-  background-color: purple;
   color: white;
 }
 
+a:visited {
+  /* light purple */
+  color: rgb(187,148,197);
+}
+
+footer {
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-variant: all-small-caps;
+  color: black;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
 footer a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: rgb(110,34,99);
   color: white;
 }
 
 footer a:visited {
-  color: white;
+  color: rgb(187,148,197);
 }
 
 footer small {
   font-size: 10px;
 }
-
-#contact h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-
-#education h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-
-#experience h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-
-#skills h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-
-#accomplishments h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-
-#links h2 {
-  color: purple;
-  font-family: 'Chau Philomene One', sans-serif;
-}
-/*
-#hardware h2 {
-  color: rgb(218,58,51);
-}
-
-#hardware img {
-  border-color: rgb(218,58,51);
-} */
