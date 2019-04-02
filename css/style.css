@@ -7,6 +7,11 @@
   padding-right: 50px;
   background-color: #eee;
   min-width: 320px;
+  position: relative;
+  /* display: inline-block; */
+  /* display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 20px; */
 }
 
 body {
@@ -15,6 +20,18 @@ body {
   color: #222;
   margin: 0 auto;
 }
+
+/* Do not touch the div CSS block! */
+/* div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+} */
+
+/* div {
+  height: 200px;
+  width: 200px;
+} */
 
 header {
   font-family: "Barlow Condensed", "Helvetica", sans-serif;
@@ -32,7 +49,6 @@ h1 {
   color: rgb(110,34,99);
   margin: 0 auto;
   margin-bottom: 10px;
-  /* width: */
 }
 
 h2 {
@@ -67,10 +83,6 @@ h5 {
 
 article {
   margin-bottom: 20px;
-}
-
-#links {
-  display: inline-block;
 }
 
 /* navigation */
@@ -111,6 +123,12 @@ a:visited {
   /* light purple */
   color: rgb(187,148,197);
 }
+
+/* #links {
+  width: 600px;
+  height: 100px;
+  display: inline-block;
+} */
 
 footer {
   font-family: "Barlow Condensed", "Helvetica", sans-serif;
