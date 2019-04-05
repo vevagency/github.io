@@ -41,7 +41,7 @@
   }
 
   .sidebar1 aside {
-    /* display: block; */
+    display: block;
     margin: 0px auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -52,6 +52,7 @@
     /* padding: 2px; */
     border: 4px solid rgb(187,148,197);
     background: url(../image/resume-headshot.jpg) no-repeat;
+    background-position: top -23px left 0;
   }
 
   #profile {
@@ -60,6 +61,10 @@
 
   .sidebar1 p {
     font-size: 21px;
+  }
+
+  .sidebar1 h3 {
+    color: black;
   }
 
   .sidebar2 {
@@ -113,6 +118,7 @@ body {
 header {
   font-family: "Barlow Condensed", "Helvetica", sans-serif;
   font-variant-caps: all-small-caps;
+  /* padding-top: -150px; */
 }
 
 h1 {
@@ -131,6 +137,7 @@ h2 {
   /* purple */
   color: rgb(110,34,99);
   margin: 0;
+  margin-bottom: 12px;
 }
 
  .sidebar2 h2 {
@@ -139,13 +146,24 @@ h2 {
 
 h3, h4 {
   /* padding-top: 20px; */
-  line-height: 1.5;
+  color: rgb(110,34,99);
+  line-height: .8;
   margin: 0;
+  /* font-size: 24px; */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 p {
   /* padding-top: 20px; */
-  line-height: 1;
+  line-height: 1.05;
   margin: 0;
 }
 
@@ -186,19 +204,20 @@ nav a {
   display: inline-block;
   padding: 10px;
   text-decoration: none;
-}
-
-nav a:hover{
-  text-decoration: underline;
-}
-
-a {
   color: white;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 a:visited {
   /* light purple */
   color: rgb(187,148,197);
+}
+
+a:active{
+  color: rgb(244,79,172);
 }
 
 footer {
@@ -211,6 +230,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
+  /* text-align: center; */
 }
 
 footer a {
