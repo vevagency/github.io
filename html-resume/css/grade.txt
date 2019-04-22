@@ -1,0 +1,25 @@
+WEB DESIGN: CSS
+STUDENT: Victoria Valdes
+GITHUB URL: http://vevagency.github.io/resume.html
+
+GRADE: 10/10
+
+Be sure you review the these corrections. You will need to understand how to use these in order to work on your final project.
+
+CORRECTIONS:
+
+(None, really.)
+
+- Code not properly indented, nested
+
+
+
+NOTES:
+
+Outstanding job. Beautiful design. Love the font, color choices. It all works so well together. You have the rare case where centering is okay. Well done!
+
+I think the only adjustment I might try is the line height on the text inside Education, Experience. I checked -- 0.8 is really compressing that text and maybe making it a little more difficult to read. This might also be a solution to what I mentioned during office hours about breaking down your roles (i.e. Marketing, Website Coordinator, etc). I could not quite pinpoint why it looked okay, but not entirely okay. I couldn't put my finger on it then. Seeing the line-height now, I think that's what it may be. So experiment. Maybe try 1.1? 1.2?
+
+The only thing to work on (from the rubric) is properly indenting/nesting code.
+
+Well done. Looking forward to seeing the final project. 
