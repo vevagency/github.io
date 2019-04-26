@@ -5,13 +5,11 @@
   <meta charset="UTF-8" />
   <title>VEV Agency | Home</title>
   <link href="css/base.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 
 <body>
-
-  <header id="top">
-    <h1>VEV Agency Index</h1>
-  </header>
 
   <main>
     <div id="wrapper">
@@ -22,31 +20,39 @@
         </a>
       </aside>
 
-      <aside class="banner">
-        <a href="index.html">
-          <img src="image/brand/banner.jpg" alt="VEV Agency Banner" />
-        </a>
-      </aside>
+      <header>
+        <h1>VEV Agency</h1>
+        <a class="banner" href="index.html"></a>
+      </header>
 
-      <nav class="nav">
-        <ul>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
+      <div class="sidebar">
 
-      <section class="sidebar">
-        <h2>Contact</h2>
-      </section>
+        <nav>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h2>Contact</h2>
+          <p>Necessity is the mother of invention.</p>
+        </section>
+
+      </div>
 
       <section class="content">
-        <h2>Content A</h2>
-      </section>
 
-      <section class="content">
-        <h2>Content B</h2>
-      </section>
+        <section id="lg-image">
+          <h2>Section</h2>
+          <img src="image/portfolio/magazine-pg-8.png" />
+        </section>
+
+        <section>
+          <h2>Section</h2>
+          <img src="image/portfolio/magazine-pg-6.png" />
+        </section>
 
     </div>
   </main>
@@ -65,6 +71,16 @@
 
     <p><small>&copy; 2019. All Rights Reserved.</small></p>
   </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      $("lg-image").slick();
+    });
+  </script>
 
 </body>
 
