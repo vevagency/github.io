@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Source+Sans+Pro');
 
 #wrapper {
+  width: 960px;
   margin: 0 auto;
   background-color: #eee;
   /* min-width: 33%; */
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 230px 1fr;
-  grid-template-rows: repeat, (2, auto);
+  grid-template-rows: repeat, (3, auto);
   grid-template-areas:
   "logo      header"
-  "sidebar   content";
+  "sidebar   nav"
+  "sidebar   content"
   }
+
+/* masthead */
 
   .logo {
     margin: 0 auto;
@@ -36,7 +40,8 @@
     font-family: "Barlow Condensed", "Helvetica", sans-serif;
     font-variant-caps: all-small-caps;
     font-size: 36px;
-    background: url(../image/brand/banner-lotus.jpg) repeat;
+    /* color: rgb(244,79,172); */
+    /* background: url(../image/brand/banner-lotus.jpg) repeat; */
     width: 100%;
   }
 
@@ -47,12 +52,35 @@
     color: white;
   }
 
+/* content */
+  body {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .image-container-nav {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+/* sidebar */
   .sidebar {
     display: block;
     margin: 0 auto;
     background-color: rgb(110,34,99);
     text-align: center;
     padding-bottom: 20px;
+    padding: 25px;
   }
 
   .sidebar h2 {
@@ -72,84 +100,84 @@
       font-variant-caps: all-small-caps;
     }
 
-  .content {
-    width: 960px;
-    padding-left: 15px;
-  }
-
   /* text */
-  body {
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    color: #222;
-    margin: 0 auto;
-  }
+    body {
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      color: #222;
+      margin: 0 auto;
+    }
 
-  h2 {
-  font-family: "Barlow Condensed", "Helvetica", sans-serif;
-  font-variant-caps: all-small-caps;
-  font-size: 48px;
-  /* purple */
-  color: rgb(110,34,99);
-  margin: 0;
-  padding-top: 50px;
-  }
+    h2 {
+    font-family: "Barlow Condensed", "Helvetica", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: 48px;
+    /* purple */
+    color: rgb(110,34,99);
+    margin: 0;
+    padding-top: 50px;
+    }
 
-  h3, h4 {
-  /* padding-top: 20px; */
-  color: rgb(110,34,99);
-  line-height: .8;
-  margin: 0;
-  /* font-size: 24px; */
-  padding-bottom: 5px;
-  }
+    h3, h4 {
+    /* padding-top: 20px; */
+    color: rgb(110,34,99);
+    line-height: .8;
+    margin: 0;
+    /* font-size: 24px; */
+    padding-bottom: 5px;
+    }
 
-  h3 {
-  font-size: 22px;
-  }
+    h3 {
+    font-size: 22px;
+    }
 
-  h4 {
-  font-size: 18px;
-  }
+    h4 {
+    font-size: 18px;
+    }
 
-  p {
-  /* padding-top: 20px; */
-  line-height: 1.05;
-  margin: 0;
-  }
+    p {
+    /* padding-top: 20px; */
+    line-height: 1.05;
+    margin: 0;
+    }
 
-  h5 {
-  font-family: "Barlow Condensed", "Helvetica", sans-serif;
-  font-variant-caps: all-small-caps;
-  font-size: 24px;
-  /* padding-top: 20px; */
-  /* line-height: .05; */
-  margin: 0;
-  }
+    h5 {
+    font-family: "Barlow Condensed", "Helvetica", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: 24px;
+    /* padding-top: 20px; */
+    /* line-height: .05; */
+    margin: 0;
+    }
 
   /* navigation */
-  nav {
-    font-size: 24px;
-    font-style: italic;
-    font-variant: all-small-caps;
-  }
+    nav {
+      font-size: 24px;
+      font-style: italic;
+      font-variant: all-small-caps;
+      background-color: black;
+    }
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-  }
+    .main-nav {
+      padding-bottom: 10px;
+    }
 
-  nav li {
-    display: inline-block;
-    margin-right: 40px;
-    margin-top: 5px;
-  }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 40px;
+      margin-top: 5px;
+    }
 
   .sidebar nav {
     padding-top: 150px;
   }
 
-  /* links */
+/* links */
   nav a {
     display: block;
     /* padding: 50px; */
@@ -173,29 +201,29 @@
 
 /* footer */
 
-footer {
-  font-family: "Barlow Condensed", "Helvetica", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  font-variant: all-small-caps;
-  position: relative;
-  text-align: left;
-}
+  footer {
+    font-family: "Barlow Condensed", "Helvetica", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-variant: all-small-caps;
+    position: relative;
+    text-align: left;
+  }
 
-footer a {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  margin-top: -10px;
-}
+  footer a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: -10px;
+  }
 
-footer a:visited {
-  color: rgb(187,148,197);
-}
+  footer a:visited {
+    color: rgb(187,148,197);
+  }
 
-footer small {
-  font-size: 16px;
-  float: left;
-  margin-left: 10px;
-}
+  footer small {
+    font-size: 16px;
+    float: left;
+    margin-left: 10px;
+  }

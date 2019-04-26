@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>VEV Agency | Home</title>
-  <link href="css/base.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VEV Agency | Home</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+  </head>
 
 <body>
 
@@ -22,12 +21,10 @@
 
       <header>
         <h1>VEV Agency</h1>
-        <a class="banner" href="index.html"></a>
+        <a href="index.html">
       </header>
 
-      <div class="sidebar">
-
-        <nav>
+        <nav class="main-nav">
           <ul>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="education.html">Education</a></li>
@@ -35,32 +32,36 @@
           </ul>
         </nav>
 
-        <section>
+<!-- sidebar -->
+        <section class="sidebar">
           <h2>Contact</h2>
           <p>Necessity is the mother of invention.</p>
         </section>
 
-      </div>
+<!-- content -->
+      <div class="content">
 
-      <section class="content">
-
-        <section id="lg-image">
-          <h2>Section</h2>
-          <img src="image/portfolio/magazine-pg-8.png" />
+        <section class="image-container">
+          <img src="image/portfolio/magazine-pg-8.png" alt="Slider Image 1" />
+          <img src="image/portfolio/magazine-pg-6.png" alt="Slider Image 2" />
+          <img src="image/portfolio/magazine-pg-7.png" alt="Slider Image 3" />
+          <img src="image/portfolio/magD9.png" alt="Slider Image 4" />
         </section>
 
-        <section>
-          <h2>Section</h2>
-          <img src="image/portfolio/magazine-pg-6.png" />
+        <section class="image-container-nav">
+          <img src="image/portfolio/magazine-pg-8.png" alt="Slider Image 1" />
+          <img src="image/portfolio/magazine-pg-6.png" alt="Slider Image 2" />
+          <img src="image/portfolio/magazine-pg-7.png" alt="Slider Image 3" />
+          <img src="image/portfolio/MagD9.png" alt="Slider Image 4" />
         </section>
 
     </div>
   </main>
 
-
+<!-- footer -->
   <footer>
 
-    <nav>
+    <nav class="footer-nav">
       <ul>
         <li><a href="#top">Return to top</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -72,13 +73,24 @@
     <p><small>&copy; 2019. All Rights Reserved.</small></p>
   </footer>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(window).load(function() {
-      $("lg-image").slick();
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript"></script>
+  <script src="js/slick.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      $(".image-container").slick({
+          slidesToShow: 1,
+          // slidesToScroll: 1,
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          fade: true,
+          asNavFor: ".image-container-nav",
+        });
+      $(".image-container-nav").slick({
+          slidesToShow: 3,
+        });
     });
   </script>
 
