@@ -21,22 +21,40 @@
 
       <header>
         <h1>VEV Agency</h1>
-        <a href="index.html">
+
+          <nav>
+            <ul>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="education.html">Education</a></li>
+            </ul>
+          </nav>
+
       </header>
 
-        <nav class="main-nav">
-          <ul>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
-        </nav>
-
 <!-- sidebar -->
-        <section class="sidebar">
-          <h2>Contact</h2>
-          <p>Necessity is the mother of invention.</p>
+      <div class="sidebar">
+        <section>
+          <h2>Bulletin</h2>
+          <p>Currently website in progress.</p>
         </section>
+
+        <section>
+          <h2>Contact</h2>
+            <p>vevagency@gmail.com</p>
+            <p>786-344-4753</p>
+            <p>Instagram: @vevagency @vev_miami</p>
+        </section>
+
+        <section>
+          <h2>Quick Links</h2>
+            <p>
+              <a href="https://www.linkedin.com/in/victoria-valdes-68926035/"><img src="image/brand/logo-linkedin-white-sq.png" alt="LinkedIn Profile Link" /></a>
+              <a href="https://www.pinecrestbakery.com/"><img src="image/brand/logo-pb-white-sq.png" alt="Pinecrest Bakery Website Link" /></a>
+            </p>
+        </section>
+
+      </div>
 
 <!-- content -->
       <div class="content">
@@ -47,6 +65,11 @@
           <img src="image/portfolio/magazine-pg-7.png" alt="Slider Image 3" />
           <img src="image/portfolio/MagD9.png" alt="Slider Image 4" />
         </section>
+
+        <ul>
+            <li class="prev"></li>
+            <li class="next"></li>
+        </ul>
 
         <section class="image-container-nav">
           <img src="image/portfolio/magazine-pg-8.png" alt="Slider Image 1" />
@@ -73,6 +96,7 @@
     <p><small>&copy; 2019. All Rights Reserved.</small></p>
   </footer>
 
+<!-- image slider script -->
   <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="js/slick.js" type="text/javascript"></script>
   <script src="js/slick.min.js" type="text/javascript"></script>
@@ -81,15 +105,19 @@
       $(".image-container").slick({
           slidesToShow: 1,
           // slidesToScroll: 1,
-          dots: true,
           arrows: true,
+          dots: true,
           autoplay: true,
           autoplaySpeed: 2000,
           fade: true,
-          asNavFor: ".image-container-nav",
+          prevArrow: $('.prev'),
+          nextArrow: $('.next'),
         });
       $(".image-container-nav").slick({
           slidesToShow: 3,
+          centerMode: true,
+          focusOnSelect: true,
+          asNavFor: ".image-container",
         });
     });
   </script>
