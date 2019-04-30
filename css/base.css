@@ -205,7 +205,7 @@ h5 {
   /* margin-bottom: 30px; */
 }
 
-.prev {
+/* .prev {
   color: rgb(110, 34, 99, 0.8);
   font-size: 60px;
   float: left;
@@ -225,7 +225,7 @@ h5 {
 
 .prev ul {
   list-style-type: none;
-}
+} */
 
 /* lightbox */
 .portfolio-gallery img {
@@ -253,6 +253,20 @@ h5 {
   margin: 0;
   padding-bottom: 10px;
 }
+
+/* static images */
+/* .static-images img {
+  width: 350px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.static-images p, a {
+  padding: 10px;
+  padding-top: 15px;
+  float: right;
+  font-size: 16px;
+} */
 
 /* nav links */
 nav a {

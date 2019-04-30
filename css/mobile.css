@@ -1,0 +1,59 @@
+@media (max-width: 375px) {
+
+  #wrapper {
+     width: 375px;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat, (3, auto);
+     grid-template-areas:
+     "logo"
+     "header"
+     "content"
+     "sidebar"
+     "footer";
+   }
+
+   .logo {
+     grid-area: logo;
+     height: 115px;
+     margin-left: -190px;
+   }
+
+   .logo img {
+     width: 15%;
+     border-radius: 50%;
+   }
+
+   header {
+     grid-area: header;
+     max-height: 215px;
+     width: 375px;
+     align-items: center;
+     padding-left: 25px;
+     padding-right: 25px;
+   }
+
+   h1 {
+     font-size: 40px;
+     padding-bottom: 8px;
+     padding-left: 20px;
+   }
+
+/* navigation pending */
+
+   .sidebar {
+     grid-area: sidebar;
+     margin: 0;
+     width: 375px;
+     background: none;
+   }
+
+   .sidebar h2 {
+     font-size: 28px;
+   }
+
+   .sidebar img {
+     width: 100px;
+     height: 100px;
+   }
+
+}
