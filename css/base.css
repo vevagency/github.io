@@ -34,20 +34,21 @@
 header {
   font-family: "Barlow Condensed", "Helvetica", sans-serif;
   font-variant-caps: all-small-caps;
-  /* background-color: rgb(110, 34, 99, 0.8); */
-  background: url(../image/brand/banner.jpg) repeat;
+  background-color: rgb(62, 25, 82, 1);
   /* width: 100%; */
   max-height: 215px;
+  background: url(../image/brand/banner.jpg) repeat;
 }
 
 h1 {
   font-size: 72px;
-  background-color: rgb(110, 34, 99, 0.8);
+  background-color: rgb(110, 34, 99);
   padding-left: 40px;
   color: white;
+  font-style: oblique;
   padding-bottom: 15px;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 31px;
 }
 
 /* navigation */
@@ -79,13 +80,14 @@ nav li {
   padding-left: 25px;
   padding-right: 25px;
   background-color: rgb(110, 34, 99);
+  /* background: url(../image/brand/grass.jpg) repeat; */
   background: url(../image/brand/banner-vertical.jpg) repeat;
 }
 
 .sidebar h2 {
   font-size: 44px;
   margin-top: 20px;
-  background-color: rgb(110, 34, 99, 0.8);
+  background-color: rgb(110, 34, 99, 0.85);
   color: white;
   padding: 10px;
 }
@@ -93,12 +95,39 @@ nav li {
 .sidebar p {
   font-family: "Barlow Condensed", "Helvetica", sans-serif;
   font-variant-caps: all-small-caps;
-  background-color: rgb(187, 148, 197, 0.8);
+  background-color: rgb(187, 148, 197, 0.85);
   color: white;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
+/* #skills {
+    background-color: rgb(187, 148, 197, 0.85);
+    font-size: 20px;
+} */
+
+#skills li {
+    font-family: "Barlow Condensed", "Helvetica", sans-serif;
+    font-variant-caps: all-small-caps;
+    background-color: rgb(187, 148, 197);
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+#skills aside {
+    background-color: rgb(187, 148, 197, 0.85);
+    width: 174px;
+    margin-left: 5px;
+}
+
+/* #skills-top {
+  padding-top: 10px;
+} */
 
 .sidebar img {
   width: 60px;
@@ -191,26 +220,78 @@ h5 {
   border: 4px solid rgb(62, 25, 82, .9);
 }
 
+#homepage h5 {
+  padding-top: 10px;
+    padding-left: 10px;
+  color: rgb(110, 34, 99);
+}
+
+#homepage h6 {
+  font-size: 12px;
+}
+
+#resume article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+#resume p {
+  font-size: 18px;
+}
+
+#resume h5 {
+  margin-top: 5px;
+}
+
+#skills {
+  padding-bottom: 50px;
+}
+
+#skills ul {
+  list-style-type: none;
+  /* padding: 10px 40px; */
+  text-align: center;
+  /* margin: 0 30px; */
+  margin-left: -45px;
+}
+
 /* slick */
 .image-container {
   width: 600px;
   margin: 0 auto;
 }
 
+.image-container h4 em {
+  color: rgb(110, 34, 99);
+}
+
 .image-container-nav {
   width: 600px;
   margin: 0 auto;
-  background-color: rgb(110, 34, 99, 0.2);
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /* margin-left: 10px; */
   /* margin-bottom: 30px; */
 }
 
-/* .prev {
+.image-container-nav h5, h6{
+  text-align: center;
+  /* margin-left: 10px; */
+  /* margin-bottom: 30px; */
+}
+
+h6 {
+  margin: 0;
+}
+
+.prev {
   color: rgb(110, 34, 99, 0.8);
   font-size: 60px;
   float: left;
-  margin-left: 80px;
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-top: 62px;
   background: url(../image/brand/arrow-prev.png) no-repeat;
 }
 
@@ -218,14 +299,14 @@ h5 {
   color: rgb(110, 34, 99, 0.8);
   font-size: 60px;
   float: right;
-  margin-right: 50px;
-  margin-top: 5px;
+  margin-right: -25px;
+  margin-top: 62px;
   background: url(../image/brand/arrow-next.png) no-repeat;
 }
 
 .prev ul {
   list-style-type: none;
-} */
+}
 
 /* lightbox */
 .portfolio-gallery img {
@@ -254,14 +335,45 @@ h5 {
   padding-bottom: 10px;
 }
 
-/* static images */
-/* .static-images img {
-  width: 350px;
-  padding: 10px;
-  padding-top: 15px;
+/* static images and text */
+.pdf-blurb {
+  display: inline-block;
+  width: 600px;
 }
 
-.static-images p, a {
+.pdf-blurb img {
+  width: 250px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-right: 30px;
+  float: left;
+}
+
+.pdf-blurb strong {
+  color: rgb(110, 34, 99);
+}
+
+.pdf-blurb p {
+  padding-top: 40px;
+
+}
+
+.pdf-blurb a {
+  padding-top: 10px;
+  font-size: 16px;
+  color: rgb(110, 34, 99);
+  text-decoration: none;
+}
+
+.pdf-blurb a:hover {
+  text-decoration: underline;
+}
+
+.pdf-blurb a:visited {
+  color: gray;
+}
+
+/* .pdf-blurb p {
   padding: 10px;
   padding-top: 15px;
   float: right;
