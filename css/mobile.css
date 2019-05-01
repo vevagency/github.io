@@ -44,7 +44,7 @@
      grid-area: sidebar;
      margin: 0;
      width: 375px;
-     background: none;
+     display: inline-block;
    }
 
    .sidebar h2 {
