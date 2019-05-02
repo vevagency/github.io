@@ -68,10 +68,10 @@
   }
 
   #skills strong {
-      padding: 0;
+    padding: 0;
   }
 
-/* body main */
+  /* body main */
   h2 {
     font-size: 32px;
     color: rgb(110, 34, 99);
@@ -110,11 +110,11 @@
     font-size: 14px;
   }
 
-  #bs strong {
+  .bs strong {
     padding: 0;
   }
 
-  #bs em {
+  .bs em {
     padding: 0;
   }
 
@@ -144,7 +144,7 @@
     float: none;
   }
 
-/* slick specific */
+  /* slick specific */
   #homepage .image-container {
     text-align: center;
   }
@@ -191,6 +191,7 @@
     width: 320px;
     /* margin-top: 16px; */
   }
+
   .pdf-blurb img {
     width: 250px;
     padding: 0;
@@ -219,7 +220,6 @@
   }
 
   /* intro standard */
-
   .intro {
     max-width: 355px;
     margin-left: 3px;
@@ -254,7 +254,6 @@
   }
 
   /* intro specific */
-
   #homepage .intro {
     width: 277px;
     height: 125px;

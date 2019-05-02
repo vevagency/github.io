@@ -111,9 +111,9 @@ nav li {
 }
 
 #skills {
-    background-color: rgb(187, 148, 197, 0.85);
-    font-size: 20px;
-    display: block;
+  background-color: rgb(187, 148, 197, 0.85);
+  font-size: 20px;
+  display: block;
 }
 
 #skills li {
@@ -394,7 +394,6 @@ h6 {
 }
 
 /*  */
-
 /* nav links */
 nav a {
   display: block;
