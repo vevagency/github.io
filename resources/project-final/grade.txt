@@ -1,0 +1,37 @@
+WEB DESIGN: Final Project
+STUDENT: Victoria Valdes
+URL: http://vevagency.com
+
+GRADE: 44/40
+
+
+DEDUCTIONS:
+
+- Demonstrates growth in coding/design: 5/5
+
+- Does not adhere to best practices presented in class:
+  - Pages are not well-structured (-2)
+
+  - Broken links (see below)
+
+BONUS:
+
+- Fully functioning mobile version (+5)
+- JavaScript / jQuery plugin (+3)
+
+
+NOTES:
+
+Beautiful design. Easily one of the best this semester.
+
+Only two real fixes are necessary.
+
+- Your use of structural tags is incorrect -- all of your content (including header, nav, footer) should not be inside main.
+
+- On the mobile design there's something causing the slightest horizontal scroll (art, however, is more prominent). I really shouldn't give credit since it was all or nothing ... but this is really, really, really good and it's the jQuery plugin which is causing the hiccup. (I would recommend trying to find a way to fix this, though.)
+
+- Regarding the broken links. You have a link to #top on every page, but there's no id="top". Technically, this is broken. As long as you didn't add a unique id to body, this is where you can add an id="top".
+
+- Only because I promised I would in class... :) your pages do come under the 2MB limit, but some are still topping 1MB. If you can get that down further, that would be good (but it's not so bad that it's noticeable.)
+
+- As a side note, when I enter this into CaneLink, I'm going to be limited to writing 40/40. I will apply your bonus on another assignment.
